@@ -2,7 +2,7 @@
 oldbuildNumber=$(awk -F '+' '/version:/ {print $2 }' pubspec.yaml)
 buildNumber=$(awk -F '+' '/version:/ {print $2 = $2+1}' pubspec.yaml)
 versionNumber=$(awk -F '[+ ]' '/version:/ {print $2}' pubspec.yaml)
-echo "Actual version $versionNumber+$oldbuildNumber > $versionNumber+$buildNumber"
+echo "Current version $versionNumber+$oldbuildNumber > $versionNumber+$buildNumber"
 
 echo "Update to version $versionNumber+$buildNumber in pubspec.yaml..."
 # sed -i '/version:/d' pubspec.yaml
