@@ -5,12 +5,11 @@ This script automatically increments the version of your Flutter project. It can
 ###  Prerequisites
 
 -   Existing Flutter project
--   Python 3 installed on your computer
 
 ### Usage
 
  1.  Place the script in the root directory of your Flutter project.
- 2.  Run the script by typing `python3 increment_version.py` in the command prompt.
+ 2.  Run the script by typing `./increment_version.py` in the command prompt.
 
 ### Notes
 
